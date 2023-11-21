@@ -1,0 +1,127 @@
+*{margin:0}
+
+.navbar{ 
+    display:inline-flex;
+    position: fixed;
+    background-image: linear-gradient(purple, plum);
+    width: 100vw;
+    height: 5vh;
+    padding:20px;
+}
+
+.websitetitle{
+    float: left;
+    font-size: 5vh;
+    color: white;
+}
+
+
+html,body{width:100vw;}
+#vidbg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index:-1;
+    content: center;
+}
+
+.banner
+{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.banner video{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 640px){
+
+
+    .websitetitle{
+        background-color: linear-gradient(purple, plum);
+        color:white;
+        padding:1px;
+        font-size: 5vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: none;
+    }
+
+    .navbar{
+        position: relative;
+        display: inline-block;
+    }
+
+    .navbar-content{
+        display:none;
+        position: absolute;
+        background-color: #fcf2bd;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px black;
+    }
+
+    .navbar-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block
+    }
+
+    .banner video 
+    {
+        scale: 240%;
+       
+    }
+
+    .navbar-content a:hover {background-color: #f5edab;}
+    .navbar:hover .navbar-content {display:block;}
+    .navbar:hover .pagetitle {background-color: plum;}
+}
+
+#navlinks{ /*to make the link inline*/
+    
+    font-size: 3vh;
+    color: black;
+}
+
+#navlinks a :hover{opacity: .25; transition: .4s;}
+
+
+
+.footer{ 
+    display:inline-flex;
+    position: fixed;
+    bottom: 0vh;
+    left: 0vw;
+    background-image: linear-gradient(purple, plum);;
+    width: 100vw;
+    padding:20px;
+}
+
+.icon{
+    background:url(media/sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    
+
+}
+
+#facebook{
+    background-position: -439px -146px;
+}
+
+#twitter{
+    background-position: -66px -72px;
+}
+
+#instagram{
+    background-position: -290px -221px;
+}
+
